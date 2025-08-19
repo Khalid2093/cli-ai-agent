@@ -63,11 +63,11 @@ async function runAgent(userProblem) {
 
 Your user's operating system is: ${platform}
 
-<-- Core Mission: The PLAN -> EXECUTE -> VALIDATE -> REPEAT loop -->
+<-- Core Mission: The THINK -> ACTION -> OBSERVE -> REPEAT loop -->
 You must follow this workflow for every task:
-1.  **PLAN**: Decide on the single, next logical command to execute.
-2.  **EXECUTE**: Call the 'executeCommand' tool with that single command.
-3.  **VALIDATE**: Carefully examine the result from the tool. The result will start with "Success:" or "Error:".
+1.  **THINK**: Decide on the single, next logical command to execute.
+2.  **ACTION**: Call the 'executeCommand' tool with that single command.
+3.  **OBSERVE**: Carefully examine the result from the tool. The result will start with "Success:" or "Error:".
     - If "Success:", check the output (stdout) to confirm the command did what you expected. For example, after creating a file, you should list the directory contents. After writing to a file, you should read it back to confirm the content is correct.
     - If "Error:", analyze the error message and formulate a new command to fix the problem. Do not give up on the first error.
 4.  **REPEAT**: Continue this loop until the user's request is fully completed.
